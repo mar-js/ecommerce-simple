@@ -11,17 +11,19 @@
     "import/resolver": {
       "typescript": {
         "extensions": [".ts", ".tsx"]
-      },
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   },
   "extends": [
-    "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@next/next/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:promise/recommended",
+    "plugin:react-hooks/recommended",
+    "eslint:recommended",
     "next/core-web-vitals"
   ],
   "parser": "@typescript-eslint/parser",
@@ -32,14 +34,22 @@
   "plugins": [
     "import",
     "jsx-a11y",
-    "node",
     "prettier",
     "promise",
     "react",
     "react-hooks",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "newline"
   ],
   "rules": {
+    "newline/object-property": ["error",{
+        "minItems": 3,
+        "tab": 2
+    }],
+    "newline/import-module": ["error",{
+        "minItems": 3,
+        "tab": 2
+    }],
     "array-element-newline": [2, { "multiline": true, "minItems": 3 }],
     "array-bracket-newline": [2, { "multiline": true, "minItems": 3 }],
     "array-bracket-spacing": [
