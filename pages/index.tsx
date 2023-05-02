@@ -1,8 +1,7 @@
-import { Header } from 'UI'
 import { NextPage } from 'next'
 
-const Home: NextPage = () => (
-  <Header />
-)
+import { TemplateHome } from 'UI/templates'
+
+const Home: NextPage = () => <TemplateHome />
 
 export default Home
