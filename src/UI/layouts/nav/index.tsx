@@ -1,3 +1,7 @@
+import { Links } from 'UI/components'
+
 export const Nav: React.FC = () => (
-  <nav />
+  <nav>
+    <Links />
+  </nav>
 )
