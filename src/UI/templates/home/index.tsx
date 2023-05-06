@@ -1,3 +1,1 @@
-import { Header } from 'UI/layouts'
-
-export const TemplateHome: React.FC = () => <Header />
+export const TemplateHome: React.FC = () => <p>asda</p>
